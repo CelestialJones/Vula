@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "VulaStock",
+    "slug": "vulastock-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.vulastock.mobile"
+    },
+    "android": {
+      
+      "package": "com.vulastock.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow VulaStock to access your camera"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow VulaStock to access your photos",
+          "cameraPermission": "Allow VulaStock to access your camera"
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
